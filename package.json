@@ -1,0 +1,33 @@
+{
+  "name": "test-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:production": "env-cmd -f .env.production yarn build && yarn start",
+    "build:development": "env-cmd -f .env.development yarn build && yarn start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.13",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.1",
+    "axios": "^1.5.1",
+    "env-cmd": "^10.1.0",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-input-mask": "^3.0.0-alpha.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.0.8",
+    "swr": "^2.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4"
+  }
+}

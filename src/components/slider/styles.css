@@ -1,0 +1,37 @@
+.prev-slide {
+  left: 43px !important;
+}
+.next-slide {
+  right: 43px !important;
+}
+
+.next-slide,
+.prev-slide {
+  top: 97px !important;
+  position: absolute !important;
+  width: 44px !important;
+  height: 44px !important;
+  background-color: #ffff !important;
+  z-index: 10 !important;
+  border-radius: 3px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.prev-slide::before,
+.next-slide::before {
+  content: "" !important;
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 24px;
+}
+.slick-list {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+  box-shadow: none;
+}
