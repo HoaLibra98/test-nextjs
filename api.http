@@ -1,0 +1,24 @@
+@baseUrl = https://api.carhara.com/v1
+@SECRET_KEY = ffWfKemLenAnUBbPIKyU
+@contentType = application/json
+@contentTypePost = application/x-www-form-urlencoded
+
+# @name settings
+GET {{baseUrl}}/setting/theme
+Content-Type: {{contentTypePost}}
+access-key: {{SECRET_KEY}}
+
+###
+
+@data_setting = {{settings.response.body.data}}
+
+###
+
+# @name updateSetting
+POST {{baseUrl}}/setting/update
+Content-Type: {{contentTypePost}}
+access-key: {{SECRET_KEY}}
+
+{
+    "data": "{{data_setting}}"
+}
