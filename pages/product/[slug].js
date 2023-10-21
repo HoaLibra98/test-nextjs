@@ -1,3 +1,4 @@
+import MiniCartPopup from "@components/MiniCartPopup";
 import { API_ADMIN_URL } from "@configs/constants";
 import { wrapper } from "@configs/store";
 import ProductDetail from "@elements/ProductDetail";
@@ -27,6 +28,9 @@ function ProductPage( { content, ...props } ) {
                     <ProductDetail productDetail={ content } />
                 </Box>
             </Container>
+            <MiniCartPopup
+                openMiniCart={ true }
+            />
         </Box>
     );
 };

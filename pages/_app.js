@@ -1,3 +1,4 @@
+import { DisplayPopup } from "@components/Popup";
 import axiosClient from "@configs/axios";
 import { wrapper } from "@configs/store";
 import { CacheProvider } from "@emotion/react";
@@ -97,6 +98,7 @@ function MyApp( props ) {
                     <CssBaseline />
                     <SessionProvider session={ pageProps.session }>
                         <Component { ...pageProps } user={ user } />
+                        <DisplayPopup />
                     </SessionProvider>
                 </RTL>
             </ThemeProvider>
