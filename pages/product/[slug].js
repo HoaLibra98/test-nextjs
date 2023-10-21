@@ -1,9 +1,7 @@
-import BlockTitle from "@components/BlockTitle";
 import { API_ADMIN_URL } from "@configs/constants";
 import { wrapper } from "@configs/store";
 import ProductDetail from "@elements/ProductDetail";
 import { Box, Container } from "@mui/material";
-import Contact from "pages/contact";
 import PropTypes from 'prop-types';
 
 export const getServerSideProps = wrapper.getServerSideProps( store => async ( context ) => {
@@ -27,11 +25,6 @@ function ProductPage( { content, ...props } ) {
             <Container maxWidth="lg" className={ `content-page-${ content.slug }` } sx={ { my: 16, padding: 0 } }>
                 <Box className='block-item'>
                     <ProductDetail productDetail={ content } />
-                </Box>
-                {/* <DisplayBlock slug="detail-product" /> */ }
-                <Box className='block-item' mt={ 6 }>
-                    <BlockTitle text="CONTACT US" className="title-customer" />
-                    <Contact />
                 </Box>
             </Container>
         </Box>
